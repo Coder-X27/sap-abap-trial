@@ -4,10 +4,7 @@
 *&
 *&---------------------------------------------------------------------*
 REPORT ZKARAN.
-DATA: LV_GUID TYPE GUID_16.
+data: lt_itab type table of VBAK.
+start-of-selection.
 
-START-OF-SELECTION.
-
-CALL FUNCTION 'GUID_CREATE'
- IMPORTING
-   EV_GUID_16       = LV_GUID
+select * from vbak into table lt_itab.
