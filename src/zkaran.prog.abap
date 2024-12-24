@@ -3,7 +3,7 @@
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT ztotp_generator.
+REPORT zkaran.
 
 CLASS lcl_totp_generator DEFINITION CREATE PRIVATE .
 
@@ -550,3 +550,5 @@ START-OF-SELECTION.
   WRITE:/ sy-uline.
   FORMAT INTENSIFIED COLOR = 4.
   WRITE:/ |TOTP: { l_otp }|.
+
+
